@@ -1,0 +1,288 @@
+/* NavBar CSS */ 
+
+.navbar {
+  background-color: rgba(144, 79, 5, 0.7);
+}
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  background-color: rgb(253, 244, 232);
+  border-radius: 16%;
+}
+
+.nav-link.active {
+  background-color: rgb(253, 244, 232);
+  border-radius: 16%;
+}
+
+
+/* Home CSS */ 
+
+body {
+  background-color: rgb(253, 244, 232);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.categoryRecipesLink {
+  text-decoration: none;
+}
+
+.categoryRecipesLink:hover {
+  transform: translateY(-5px); /* Lift the card up on hover */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px; /* Add a shadow effect on hover */
+  background-color: rgba(255, 255, 255, 0.9); /* Optional: change background color slightly */
+}
+
+/* Optional: Card hover effect */
+.card {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: transform 0.3s ease; /* Transition for card movement */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.divCategories {
+  background-color: rgb(250, 250, 249);
+}
+
+.tagline {
+  font-size: 2em;
+  text-align: center;
+  color: #6a9eae; /* Pastel teal color */
+}
+
+.main-title {
+  font-size: 2.5em;
+  text-align: center;
+  color: #de8a8a; /* Pastel pink color */
+}
+
+.sub-title, .tips-subtitle {
+  font-size: 1.2em;
+  text-align: center;
+  color: #5d5c61; /* Soft gray color */
+}
+
+.card-title {
+  background-color: rgba(144, 79, 5, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.divCircleImg:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.circleImg {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Transition for card movement */
+}
+
+.circleImgLink {
+  text-decoration: none;
+}
+
+.tips-title {
+  font-size: 2em;
+  text-align: center;
+  color: #de8a8a; /* Pastel pink color */
+}
+
+h5 {
+  font-size: 1.5em; /* Responsive font size */
+}
+
+p {
+  font-size: 1em; /* Responsive font size */
+}
+
+.carousel {
+  padding-top: 1em;
+}
+
+.carousel-inner h5, 
+.carousel-inner p {
+  font-size: 1.1em; /* Responsive font size */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;
+}
+
+/* .card {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+} */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h5 {
+      font-size: 1.2em;
+  }
+
+  p {
+      font-size: 0.9em;
+  }
+
+  .tagline, .main-title, .tips-title {
+      font-size: 1.8em;
+  }
+
+  .circleImg {
+      width: 30vw;
+      height: 30vw;
+  }
+}
+
+@media (max-width: 480px) {
+  h5 {
+      font-size: 1em;
+  }
+
+  p {
+      font-size: 0.8em;
+  }
+
+  .tagline, .main-title, .tips-title {
+      font-size: 1.5em;
+  }
+
+  .circleImg {
+      width: 40vw;
+      height: 40vw;
+  }
+}
+
+
+
+
+
+ /* Footer CSS */ 
+  .footer {
+    background-color: rgba(144, 79, 5, 0.7);
+    color: white;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social-link {
+    color: white;
+  }
+  
+  .footer-social-link:hover {
+    color: #007bff;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
