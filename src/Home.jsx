@@ -78,7 +78,6 @@ function Tips() {
             <div className="row justify-content-center">
                 <div className="col-md-8">
                     <h3 className="text-center tips-title">Tips for a Balanced Diet</h3>
-                    {/* <h6 className="tips-subtitle">Achieving a balanced diet involves a variety of foods in the right proportions. Here are some tips:</h6> */}
                     <div id="carouselExample" className="carousel slide mt-4">
                         <div className="carousel-inner">
                             {[
