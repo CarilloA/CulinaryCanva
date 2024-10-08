@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'; // Import icons for social media
 
 function Footer() {
@@ -11,7 +12,7 @@ function Footer() {
                         <ul className="list-unstyled">
                             <li><a href='#' className="footer-link">About Us</a></li>
                             <li><a href='#' className="footer-link">Blog</a></li>
-                            <li><a href='#' className="footer-link">Contact Us</a></li>
+                            <li><NavLink to ='pages/ContactUs' className="footer-link">Contact Us</NavLink></li>
                             <li><a href='#' className="footer-link">Privacy Policy</a></li>
                         </ul>
                     </div>

@@ -15,25 +15,25 @@ function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav ms-auto">
                             <li className="nav-item active">
                             <NavLink to ='Home' className="nav-link">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                            <NavLink to ='pages/Recipes' className="nav-link">Recipes</NavLink>
+                            <NavLink to ='pages/Recipes' className="nav-link">Recipe Gallery</NavLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                             <NavLink to ='pages/Tips' className="nav-link">Nutrition Tips</NavLink>
                             </li>
                             <li className="nav-item">
                             <NavLink to ='pages/About' className="nav-link">About Us</NavLink>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
-                            <NavLink to ='pages/Contact' className="nav-link">Contact</NavLink>
+                            <NavLink to ='pages/ContactUs' className="nav-link">Contact Us</NavLink>
                             </li>
                         </ul>
                         {/* Add ms-auto to align these links to the right */}
-                        <div className=" ms-auto">
+                        {/* <div className=" ms-auto">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Log In</a>
@@ -42,7 +42,7 @@ function Navbar() {
                                     <a className="nav-link" href="#">Sign Up</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </nav>

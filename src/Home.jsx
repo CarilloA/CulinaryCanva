@@ -34,10 +34,10 @@ function MainCategories() {
             <div className="row mt-4">
                 {['Quinoa Salad with Fresh Vegetables', 'Grilled Salmon with Asparagus', 'Berry Smoothie Bowl', 'Spinach and Chickpea Salad'].map((title, index) => (
                     <div key={index} className="col">
-                        <NavLink to ='/Pages/CategoryRecipes' className='categoryRecipesLink'>
+                        <NavLink to ='#' className='categoryRecipesLink'>
                             <div className="card mb-4 mt-4" style={{ width: '18rem' }}>
                                 <h6 className="card-title description">{descriptions[index]}</h6>
-                                <img src={images[index]} className="card-img-top" alt={title} style={{ height: '18rem' }}/>
+                                <img src={images[index]} className="card-img-top img-fluid" alt={title} style={{ height: '18rem' }}/>
                             </div>
                         </NavLink>
                     </div>
@@ -55,7 +55,7 @@ function Categories() {
             <div className="row mt-4">
                 {['APPETIZERS', 'BAKEDS', 'BEVERAGES', 'DESSERTS', 'MAIN-DISH', 'NOODLES', 'PASTAS', 'SALADS', 'SOUPS', 'VEGETABLES'].map((title, index) => (
                     <div key={index} className="divCircleImg col d-flex flex-column align-items-center mb-4">
-                        <NavLink to ='/Pages/CategoryRecipes' className='circleImgLink'>
+                        <NavLink to ='#' className='circleImgLink'>
                             <img 
                                 src={images[index]} 
                                 alt={title} 

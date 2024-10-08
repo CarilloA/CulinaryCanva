@@ -1,13 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Navbar from './common/Navbar.jsx';
+import Navbar from './common/NavBar.jsx';
 import Footer from './common/Footer.jsx';
 import Home from './Home';
-import Recipes from './pages/Recipes';
-import CategoryRecipes from './pages/CategoryRecipes';
-import RecipeProfile from './pages/RecipeProfile';
-import About from './pages/About';
-import PageNotFound from './common/PageNotFound';
+import Recipes from './pages/RecipeGallery.jsx';
+import CategoryRecipes from './pages/CategoryRecipes.jsx';
+import RecipeProfile from './pages/RecipeProfile.jsx';
+import About from './pages/About.jsx';
+import ContactUs from './pages/ContactUs.jsx';
+import PageNotFound from './common/PageNotFound.jsx';
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -18,7 +19,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <body>
+        {/* <body> */}
           <Routes>
             <Route path='/' element={<Home />} /> {/*for default page*/}
             <Route path='/Home' element={<Home />} />
@@ -26,13 +27,13 @@ function App() {
             <Route path='/Pages/CategoryRecipes' element={<CategoryRecipes />} />
             <Route path='/Pages/RecipeProfile' element={<RecipeProfile />} />
             <Route path='/pages/About' element={<About />} />
+            <Route path='/pages/ContactUs' element={<ContactUs />} />
             <Route path='/PageNotFound' element={<PageNotFound />} />
           </Routes>
-        </body>
+          <Footer />
+          
+        {/* </body> */}
       </BrowserRouter>
-        {/* <Navbar /> */}
-        {/* { <Home /> } */}
-        <Footer />
     </>
   )
 }
