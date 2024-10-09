@@ -34,12 +34,12 @@ function MainCategories() {
             <div className="row mt-4">
                 {['Quinoa Salad with Fresh Vegetables', 'Grilled Salmon with Asparagus', 'Berry Smoothie Bowl', 'Spinach and Chickpea Salad'].map((title, index) => (
                     <div key={index} className="col">
-                        <NavLink to ='#' className='categoryRecipesLink'>
                             <div className="card mb-4 mt-4" style={{ width: '18rem' }}>
+                            <NavLink to ='/Pages/CategoryRecipes' className='categoryRecipesLink'>
                                 <h6 className="card-title description">{descriptions[index]}</h6>
                                 <img src={images[index]} className="card-img-top img-fluid" alt={title} style={{ height: '18rem' }}/>
+                            </NavLink>
                             </div>
-                        </NavLink>
                     </div>
                 ))}
             </div>
@@ -55,7 +55,7 @@ function Categories() {
             <div className="row mt-4">
                 {['APPETIZERS', 'BAKEDS', 'BEVERAGES', 'DESSERTS', 'MAIN-DISH', 'NOODLES', 'PASTAS', 'SALADS', 'SOUPS', 'VEGETABLES'].map((title, index) => (
                     <div key={index} className="divCircleImg col d-flex flex-column align-items-center mb-4">
-                        <NavLink to ='#' className='circleImgLink'>
+                        <NavLink to ='/Pages/CategoryRecipes' className='circleImgLink'>
                             <img 
                                 src={images[index]} 
                                 alt={title} 
@@ -125,15 +125,17 @@ function Posts() {
             <div className="row mt-4">
                 {['Quinoa Salad with Fresh Vegetables', 'Grilled Salmon with Asparagus', 'Berry Smoothie Bowl', 'Spinach and Chickpea Salad'].map((title, index) => (
                     <div key={index} className="col">
-                        <div className="card mb-4" style={{ width: '15rem' }}>
-                            <img src={images[index]} className="card-img-top" alt={title} style={{ height: '15rem' }}/>
-                            <div className="card-body">
-                                <p>{user[index]} | {date[index]}</p>
-                                <h5 className="card-title">{title}</h5>
-                                <p className="card-text">{descriptions[index]}</p>
-                                <a href="#" className="card-link">More Info</a>
+                            <div className="card mb-4" style={{ width: '15rem' }}>
+                            <NavLink to='/RecipeProfile' className='categoryRecipesLink'>
+                                <img src={images[index]} className="card-img-top" alt={title} style={{ height: '15rem' }}/>
+                                <div className="card-body">
+                                    <p>{user[index]} | {date[index]}</p>
+                                    <h5 className="card-title">{title}</h5>
+                                    <p className="card-text">{descriptions[index]}</p>
+                                    {/* <a href="#" className="card-link">More Info</a> */}
+                                </div>
+                                </NavLink>
                             </div>
-                        </div>
                     </div>
                 ))}
             </div>

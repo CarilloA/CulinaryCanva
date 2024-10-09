@@ -10,7 +10,7 @@ function Navbar() {
         
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    <NavLink to ='Home' className="navbar-brand">Culinary Canvas</NavLink>
+                    <NavLink to ='Home' className="navbar-brand">CulinaryCanvas</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
@@ -20,14 +20,11 @@ function Navbar() {
                             <NavLink to ='Home' className="nav-link">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                            <NavLink to ='pages/Recipes' className="nav-link">Recipe Gallery</NavLink>
-                            </li>
-                            {/* <li className="nav-item">
-                            <NavLink to ='pages/Tips' className="nav-link">Nutrition Tips</NavLink>
+                            <NavLink to ='pages/CulinaryGallery' className="nav-link">Culinary Gallery</NavLink>
                             </li>
                             <li className="nav-item">
                             <NavLink to ='pages/About' className="nav-link">About Us</NavLink>
-                            </li> */}
+                            </li>
                             <li className="nav-item">
                             <NavLink to ='pages/ContactUs' className="nav-link">Contact Us</NavLink>
                             </li>

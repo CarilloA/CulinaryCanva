@@ -10,10 +10,11 @@ function Footer() {
                     <div className="col-md-6 mb-3">
                         <h5>Explore More at Culinary Canvas</h5>
                         <ul className="list-unstyled">
-                            <li><a href='#' className="footer-link">About Us</a></li>
-                            <li><a href='#' className="footer-link">Blog</a></li>
+                        <li><NavLink to ='Home' className="footer-link">Home</NavLink></li>
+                        <li><NavLink to ='pages/CulinaryGallery' className="footer-link">Culinary Gallery</NavLink></li>
+                            <li><NavLink to ='pages/About' className="footer-link">About Us</NavLink></li>
                             <li><NavLink to ='pages/ContactUs' className="footer-link">Contact Us</NavLink></li>
-                            <li><a href='#' className="footer-link">Privacy Policy</a></li>
+                            {/* <li><a href='#' className="footer-link">Privacy Policy</a></li> */}
                         </ul>
                     </div>
                     <div className="col-md-6 mb-3">

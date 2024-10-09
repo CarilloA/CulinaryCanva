@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Navbar from './common/NavBar.jsx';
 import Footer from './common/Footer.jsx';
 import Home from './Home';
-import Recipes from './pages/RecipeGallery.jsx';
+import CulinaryGallery from './pages/CulinaryGallery.jsx';
 import CategoryRecipes from './pages/CategoryRecipes.jsx';
 import RecipeProfile from './pages/RecipeProfile.jsx';
 import About from './pages/About.jsx';
@@ -23,9 +23,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} /> {/*for default page*/}
             <Route path='/Home' element={<Home />} />
-            <Route path='/pages/Recipes' element={<Recipes />} /> {/*element content is the import file*/}
+            <Route path='/pages/CulinaryGallery' element={<CulinaryGallery />} /> {/*element content is the import file*/}
             <Route path='/Pages/CategoryRecipes' element={<CategoryRecipes />} />
-            <Route path='/Pages/RecipeProfile' element={<RecipeProfile />} />
+            <Route path='/RecipeProfile' element={<RecipeProfile />} />
             <Route path='/pages/About' element={<About />} />
             <Route path='/pages/ContactUs' element={<ContactUs />} />
             <Route path='/PageNotFound' element={<PageNotFound />} />
