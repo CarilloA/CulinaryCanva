@@ -59,7 +59,7 @@ function CulinaryGallery() {
 
     return (
         <div className="gallery-container">
-            <h1 className="gallery-title">Recipe Gallery</h1>
+            <h1 className="gallery-title">Culinary Gallery</h1>
             <div className="gallery-grid">
                 {titles.map((title, index) => (
                     <div key={index} className="recipe-card">

@@ -66,6 +66,10 @@
   .footer p {
       font-size: 0.8rem;
   }
+
+  .footer-link {
+    font-size: 0.8rem;
+}
 }
 
 /* Page Not Found */
@@ -133,11 +137,11 @@
 
 /* Home CSS */ 
 
-body {
+/* body {
   background-color: rgb(253, 244, 232);
   font-family: 'Arial', sans-serif;
   margin: 0;
-}
+} */
 
 .categoryRecipesLink {
   text-decoration: none;
@@ -385,8 +389,7 @@ h1 {
 /* About Us Style */
 
 .about-container {
-  position: relative;
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 20px; /* Adjusted padding for smaller screens */
   border-radius: 12px;
@@ -472,26 +475,6 @@ h1 {
   }
   
 }
-
-/* Background Image Styles */
-
-.about-container::before {
-  content: '';
-  background-image: url('./assets/culinaryart.png'); /* Ensure the path is correct */
-  width: 65vw;
-  height: 65vh;
-  position: absolute; /* Position behind content */
-  bottom: 0;
-  right: 0;
-  opacity: 0.7; /* Adjust opacity for visibility */
-  z-index: 0; /* Send it behind other elements */
-}
-
-.about-container > * {
-  position: relative; /* Ensure content is above the background image */
-  z-index: 1; /* Keep content above the image */
-}
-
 
 
 

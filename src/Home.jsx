@@ -28,24 +28,25 @@ function TagLine() {
 function MainCategories() {
     const images = [breakfast, lunch, snack, dinner];
     const descriptions = ['BREAKFAST', 'LUNCH', 'SNACK', 'DINNER'];
-    
+
     return (
         <div className="container-fluid mt-5">
-            <div className="row mt-4">
+            <div className="row mt-4 justify-content-center"> {/* Added justify-content-center */}
                 {['Quinoa Salad with Fresh Vegetables', 'Grilled Salmon with Asparagus', 'Berry Smoothie Bowl', 'Spinach and Chickpea Salad'].map((title, index) => (
-                    <div key={index} className="col">
-                            <div className="card mb-4 mt-4" style={{ width: '18rem' }}>
-                            <NavLink to ='/Pages/CategoryRecipes' className='categoryRecipesLink'>
+                    <div key={index} className="col d-flex justify-content-center"> {/* Set a fixed width and centered content */}
+                        <div className="card mb-4" style={{ width: '18rem' }}>
+                            <NavLink to='/Pages/CategoryRecipes' className='categoryRecipesLink'>
                                 <h6 className="card-title description">{descriptions[index]}</h6>
-                                <img src={images[index]} className="card-img-top img-fluid" alt={title} style={{ height: '18rem' }}/>
+                                <img src={images[index]} className="card-img-top img-fluid" alt={title} style={{ height: '18rem' }} />
                             </NavLink>
-                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
         </div>
     );
 }
+
 
 function Categories() {
     const images = [appetizer, baked, beverage, dessert, mainDish, noodles, pasta, salad, soup, vegetable];
@@ -124,7 +125,7 @@ function Posts() {
             <h3 className="main-title text-center">Fresh Recipes To Taste</h3>
             <div className="row mt-4">
                 {['Quinoa Salad with Fresh Vegetables', 'Grilled Salmon with Asparagus', 'Berry Smoothie Bowl', 'Spinach and Chickpea Salad'].map((title, index) => (
-                    <div key={index} className="col">
+                    <div key={index} className="col d-flex justify-content-center">
                             <div className="card mb-4" style={{ width: '15rem' }}>
                             <NavLink to='/RecipeProfile' className='categoryRecipesLink'>
                                 <img src={images[index]} className="card-img-top" alt={title} style={{ height: '15rem' }}/>
