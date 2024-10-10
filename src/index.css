@@ -16,12 +16,10 @@
 
 .nav-link:hover {
   background-color: rgb(253, 244, 232);
-  border-radius: 16%;
 }
 
 .nav-link.active {
   background-color: rgb(253, 244, 232);
-  border-radius: 16%;
 }
 
 /* Footer CSS */ 
@@ -55,7 +53,7 @@
 }
 
 .footer p {
-  margin: 1rem 0 0;
+  /* margin: 1rem 0 0; */
   font-size: 0.9rem;
 }
 
@@ -69,6 +67,68 @@
       font-size: 0.8rem;
   }
 }
+
+/* Page Not Found */
+
+.not-found-container {
+  min-height: 50vh;
+  position: relative;
+  align-items: center; /* Center vertically */
+  padding: 20px; /* Add padding around the container */
+}
+
+.page-not-found {
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700rem; /* Adjust max-width as needed */
+  z-index: 1; /* Ensure it appears above the background image */
+}
+
+.not-found-container::before {
+  content: '';
+  position: absolute;
+  right: 0; /* Position on the right */
+  top: 0; /* Align to the top */
+  width: 40vw; /* Set width of the background image */
+  height: 100%; /* Full height */
+  background-image: url('./assets/not-found.png');
+  background-repeat: no-repeat;
+  opacity: 0.8; /* Slightly less opaque */
+  z-index: 0; /* Send it behind other elements */
+}
+
+.not-found-link {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #2980b9; /* Blue color for links */
+  font-weight: bold; /* Bold text for links */
+  transition: color 0.3s, transform 0.2s; /* Color and scale on hover */
+}
+
+.not-found-link:hover {
+  color: rgba(144, 79, 5, 0.7); /* Change color on hover */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .not-found-container {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center items */
+    padding: 10px; /* Reduce padding for mobile */
+  }
+
+  .page-not-found {
+    max-width: 90%; /* Full width on mobile */
+    margin: 0; /* Remove margin on mobile */
+  }
+}
+
+
+
+
 
 
 /* Home CSS */ 
@@ -107,13 +167,13 @@ body {
 .tagline {
   font-size: 2.5vw; /* Responsive font size */
   text-align: center;
-  color: #6a9eae;
+  color: #de8a8a; /* #6a9eae */
 }
 
 .main-title {
   font-size: 3vw; /* Responsive font size */
   text-align: center;
-  color: #de8a8a;
+  color: #b86868;
 }
 
 .sub-title, .tips-subtitle {
@@ -152,7 +212,7 @@ body {
 .tips-title {
   font-size: 2.5vw; /* Responsive font size */
   text-align: center;
-  color: #de8a8a;
+  color: #b86868;
 }
 
 h5 {
@@ -232,7 +292,7 @@ p {
 
 h1 {
   text-align: center;
-  color: #6a9eae; /* Pastel teal color */
+  color: #de8a8a; /* Pastel teal color */
 }
 
 .contact-form {
@@ -284,7 +344,7 @@ h1 {
 .gallery-title {
   margin-bottom: 30px;
   font-size: 2.5rem;
-  color: #333;
+  color: #de8a8a;
   font-weight: bold;
 }
 
@@ -410,6 +470,7 @@ h1 {
   .about-section-title {
     font-size: 1.2rem; /* Smaller section titles */
   }
+  
 }
 
 /* Background Image Styles */
@@ -418,7 +479,7 @@ h1 {
   content: '';
   background-image: url('./assets/culinaryart.png'); /* Ensure the path is correct */
   width: 65vw;
-  height: 70vh;
+  height: 65vh;
   position: absolute; /* Position behind content */
   bottom: 0;
   right: 0;

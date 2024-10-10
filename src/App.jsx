@@ -15,11 +15,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
 
   return (
-    
     <>
       <BrowserRouter>
         <Navbar />
-        {/* <body> */}
           <Routes>
             <Route path='/' element={<Home />} /> {/*for default page*/}
             <Route path='/Home' element={<Home />} />
@@ -28,11 +26,9 @@ function App() {
             <Route path='/RecipeProfile' element={<RecipeProfile />} />
             <Route path='/pages/About' element={<About />} />
             <Route path='/pages/ContactUs' element={<ContactUs />} />
-            <Route path='/PageNotFound' element={<PageNotFound />} />
+            <Route path='*' element={<PageNotFound />} /> {/* include asterisk for wildcard route */}
           </Routes>
           <Footer />
-          
-        {/* </body> */}
       </BrowserRouter>
     </>
   )

@@ -2,7 +2,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import {NavLink} from 'react-router-dom';
 
-
 function Navbar() {
 
     return (
